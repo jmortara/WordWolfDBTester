@@ -11,8 +11,12 @@ public class MySQLAccessTester
     dao.connectToDataBase();
     dao.getAllUsers();
     dao.createRandomNewUser();
-    ResultSet testUser = dao.getUser("tyler", true);
-    dao.updateCurrentScore("jason");
+    dao.getUser("tyler", true);
+    dao.updateCurrentScore("jason", 3);
+    dao.getUserCurrentScore("jason");
+    dao.updateHighScore("jason", 398);
+    dao.getUserHighScore("jason");
+    dao.deleteUser("_deleteme63");
     
   }
 
